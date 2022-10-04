@@ -19,7 +19,12 @@ public class Tri {
 	 * Trie le sous-tableau t[debut]..t[fin]
 	 */
 	private static void triFusion(int[] t, int debut, int fin){
-		//A FAIRE
+		if (debut < fin) {
+			int milieu = (debut+fin)/2;
+			triFusion(t, debut, milieu);
+			triFusion(t, milieu+1, fin);
+			fusionner(t, debut, milieu, fin);
+		}
 	}
 
 	/* Sous-fonction pour le tri fusion
