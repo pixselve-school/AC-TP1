@@ -7,7 +7,7 @@ public class Tri {
 		for(int j=1; j<t.length; j++){
 			int key = t[j];
 			int i = j-1;
-			while(i>0 && t[i] > key){
+			while(i>=0 && t[i] > key){
 				t[i+1] = t[i];
 				i = i-1;
 			}
