@@ -4,7 +4,7 @@ public class Tri {
 	 * cf TD1 exo 2
 	 */
 	public static void triInsertion(int[] t){
-		for(int j=2; j<t.length; j++){
+		for(int j=1; j<t.length; j++){
 			int key = t[j];
 			int i = j-1;
 			while(i>0 && t[i] > key){
